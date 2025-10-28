@@ -15,8 +15,10 @@ def main():
     feel = weather['main']['feels_like']
     humidity = weather['main']['humidity']
     conditions = weather['weather'][0]['description']
+    temp_min = weather['main']['temp_min']
+    temp_max = weather['main']['temp_max']
 
-    print(f"Temprature: {temp}°C \nFeels Like: {feel}°C\nConditions: {conditions}\nHumidity: {humidity}% \n")
+    print(f"Temprature: {temp}°C \nFeels Like: {feel}°C\nConditions: {conditions}\nHumidity: {humidity}% \nTemprature Min {temp_min}°C\nTemprature Max {temp_max}°C")
 
 
 main()
